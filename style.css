@@ -49,3 +49,42 @@ h1 {
   background: #39ff14;
   box-shadow: 0 0 15px #39ff14;
 }
+input {
+  background: #0b0c10;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: 0.3s;
+}
+input::placeholder {
+  color: #00ffcc99;
+}
+input:focus {
+  border-color: #39ff14;
+  box-shadow: 0 0 15px #39ff14;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 10px;
+  margin: 0;
+  padding: 30px;
+  overflow: auto;
+  height: 70%;
+  width: 75%;
+  box-shadow: 0 0 10px #00ffcc;
+  border-radius: 20px;
+  padding-left: 60px;
+}
+.list-item {
+  cursor: pointer;
+}
+.list-item:hover {
+  text-decoration: underline;
+}
+/**/
