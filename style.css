@@ -119,3 +119,43 @@ input:focus {
   width: 100%;
   object-fit: cover;
 }
+/**/
+.info-card_episodes {
+  position: absolute;
+  height: 280px;
+  width: 320px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #00ffcc;
+  z-index: 2;
+}
+.info-card_location {
+  position: absolute;
+  height: 280px;
+  width: 320px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #00ffcc;
+  z-index: 2;
+}
+.locations-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+  font-weight: 600;
+}
+.locations-info p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
