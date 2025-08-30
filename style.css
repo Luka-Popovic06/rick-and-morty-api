@@ -88,3 +88,34 @@ input:focus {
   text-decoration: underline;
 }
 /**/
+.info-card_character {
+  position: absolute;
+  height: 480px;
+  width: 320px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #00ffcc;
+  z-index: 2;
+}
+.characters-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+  margin: 0;
+  padding-left: 8px;
+  font-weight: 600;
+}
+.characters-info p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.character-img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
