@@ -18,3 +18,34 @@ h1 {
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
 }
+/*Main*/
+.container {
+  background: linear-gradient(135deg, #0b0c10, #1a1a2e);
+  color: #39ff14;
+  height: 80vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.btn {
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffcc;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background: #39ff14;
+  box-shadow: 0 0 15px #39ff14;
+}

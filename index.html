@@ -19,7 +19,7 @@
         <div class="btn-minibox">
           <button class="btn episodes-btn">Epizodes</button>
           <input
-            class="search-epizodes hidden"
+            class="search-epizodes transparent"
             type="text"
             placeholder="Search Epizodes"
             name="episodes"
@@ -29,7 +29,7 @@
         <div class="btn-minibox">
           <button class="btn characters-btn">Characters</button>
           <input
-            class="search-characters hidden"
+            class="search-characters transparent"
             type="text"
             placeholder="Search Characters"
             name="characters"
@@ -39,7 +39,7 @@
         <div class="btn-minibox">
           <button class="btn locations-btn">Locations</button>
           <input
-            class="search-locations hidden"
+            class="search-locations transparent"
             type="text"
             placeholder="Search Locations"
             name="Locations"
@@ -48,6 +48,68 @@
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+    <div class="info-card_character hidden">
+      <img class="character-img" src="" />
+      <div class="characters-info">
+        <p>
+          <span>Name: </span>
+          <span class="character-name"></span>
+        </p>
+        <p>
+          <span>Species: </span>
+          <span class="character-species"></span>
+        </p>
+        <p>
+          <span>Type: </span>
+          <span class="character-type"></span>
+        </p>
+        <p>
+          <span>ID: </span>
+          <span class="character-id"></span>
+        </p>
+      </div>
+    </div>
+    <div class="info-card_location hidden">
+      <div class="locations-info">
+        <p>
+          <span>Name: </span>
+          <span class="location-name"></span>
+        </p>
+        <p>
+          <span>Dimension: </span>
+          <span class="location-dimension"></span>
+        </p>
+        <p>
+          <span>Type: </span>
+          <span class="location-type"></span>
+        </p>
+        <p>
+          <span>ID: </span>
+          <span class="location-id"></span>
+        </p>
+      </div>
+    </div>
+    <div class="info-card_episodes hidden">
+      <div class="locations-info">
+        <p>
+          <span>Name: </span>
+          <span class="episode-name"></span>
+        </p>
+        <p>
+          <span>Air date: </span>
+          <span class="episode-air_date"></span>
+        </p>
+        <p>
+          <span>Episode: </span>
+          <span class="episode-number"></span>
+        </p>
+        <p>
+          <span>ID: </span>
+          <span class="episode-id"></span>
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
