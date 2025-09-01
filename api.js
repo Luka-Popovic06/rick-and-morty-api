@@ -18,3 +18,7 @@ export const fetchRickAndMortyData = async (number, type) => {
     console.log(error);
   }
 };
+const createListItem = p => {
+  const html = `<li class="list-item">${p}</li>`;
+  domElements.list.insertAdjacentHTML('beforeend', html);
+};
