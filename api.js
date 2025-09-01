@@ -1,5 +1,5 @@
 import { domElements } from './dom.js';
-import { episode, character, location } from './input.js';
+
 export const fetchRickAndMortyData = async (number, type) => {
   try {
     for (let i = 0; i < number; i++) {

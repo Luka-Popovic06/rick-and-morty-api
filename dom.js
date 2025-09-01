@@ -7,6 +7,11 @@ export const domElements = {
   searchLocations: document.querySelector('.search-locations'),
   list: document.querySelector('.list'),
   main: document.querySelector('.container'),
+  infoBox: document.querySelector('.info-box'),
+  searchEpizodesForm: document.querySelector('.search-epizodes-form'),
+  searchCharactersForm: document.querySelector('.search-characters-form'),
+  searchLocationsForm: document.querySelector('.search-locations-form'),
+  overlay: document.querySelector('.overlay'),
   //
   infoCardCharacter: document.querySelector('.info-card_character'),
   characterImg: document.querySelector('.character-img'),

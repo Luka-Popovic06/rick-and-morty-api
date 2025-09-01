@@ -89,16 +89,11 @@ input:focus {
 }
 /**/
 .info-card_character {
-  position: absolute;
-  height: 480px;
-  width: 320px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 280px;
+  width: 170px;
   border-radius: 16px;
   padding: 16px;
   background-color: #00ffcc;
-  z-index: 2;
 }
 .characters-info {
   display: flex;
@@ -111,8 +106,14 @@ input:focus {
 }
 .characters-info p {
   margin: 0;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
+}
+.character-name {
+  white-space: nowrap;
+  overflow: auto;
+  margin-left: 10px;
 }
 .character-img {
   height: 60%;
@@ -121,28 +122,18 @@ input:focus {
 }
 /**/
 .info-card_episodes {
-  position: absolute;
-  height: 280px;
-  width: 320px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 220px;
   border-radius: 16px;
   padding: 16px;
   background-color: #00ffcc;
-  z-index: 2;
 }
 .info-card_location {
-  position: absolute;
-  height: 280px;
-  width: 320px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 220px;
   border-radius: 16px;
   padding: 16px;
   background-color: #00ffcc;
-  z-index: 2;
 }
 .locations-info {
   display: flex;
@@ -167,9 +158,10 @@ input:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #00000080;
+  background-color: #000000da;
   transition: background-color 0.5s;
 }
+
 .hidden {
   display: none;
 }

@@ -1,6 +1,7 @@
 'use strict';
 import { domElements } from './dom.js';
-import { fetchRickAndMortyData } from './api.js';
+import { fetchRickAndMortyData, getCharacter } from './api.js';
+import { episode, character, location } from './input.js';
 domElements.main.addEventListener('click', function (e) {
   if (e.target.closest('.episodes-btn')) {
     domElements.btnEpisodes.disabled = true;
