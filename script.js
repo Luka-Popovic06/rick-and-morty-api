@@ -35,5 +35,17 @@ domElements.main.addEventListener('click', function (e) {
     domElements.searchEpisodes.classList.add('transparent');
     domElements.searchLocations.classList.toggle('transparent');
     fetchRickAndMortyData(8, 'location');
+  } else if (e.target.closest('.list-item')) {
+    const list = e.target.closest('.list-item');
+    if (domElements.btnEpisodes.disabled === true) {
+      getEpisode(list.dataset.name);
+    } else if (domElements.btnLocations.disabled === true) {
+      getLocation(list.dataset.name);
+    } else if (domElements.btnCharacters.disabled === true) {
+      getCharacter(list.dataset.name);
+      console.log(list.dataset.name);
+    }
+    domElements.infoBox.classList.remove('hidden');
+    domElements.overlay.classList.remove('hidden');
   }
 });
