@@ -49,3 +49,11 @@ domElements.main.addEventListener('click', function (e) {
     domElements.overlay.classList.remove('hidden');
   }
 });
+domElements.overlay.addEventListener('click', function (e) {
+  domElements.infoBox.classList.add('hidden');
+  domElements.overlay.classList.add('hidden');
+  domElements.infoBox.innerHTML = '';
+  domElements.searchCharacters.value = '';
+  domElements.searchEpisodes.value = '';
+  domElements.searchLocations.value = '';
+});
