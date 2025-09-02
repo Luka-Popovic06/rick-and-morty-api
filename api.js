@@ -9,17 +9,17 @@ export const fetchRickAndMortyData = async (number, type) => {
       const list = await rickAndMortyData.json();
       const { results } = list;
       const names = results.map(n => n.name);
+      console.log(names);
       names.forEach(element => {
         createListItem(element);
       });
-      console.log(list);
     }
   } catch (error) {
     console.log(error);
   }
 };
-const createListItem = p => {
-  const html = `<li class="list-item">${p}</li>`;
+const createListItem = name => {
+  const html = `<li class="list-item" data-name="${name}">${name}</li>`;
   domElements.list.insertAdjacentHTML('beforeend', html);
 };
 export const getCharacter = async characterName => {
@@ -33,8 +33,6 @@ export const getCharacter = async characterName => {
       const { id, name, status, species, type, image } = result;
       createCaracterInf(image, name, species, type, id, status);
     });
-    console.log(character);
-    //
   } catch (error) {
     console.log(error);
   }

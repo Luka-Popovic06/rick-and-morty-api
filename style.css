@@ -146,9 +146,20 @@ input:focus {
   font-weight: 600;
 }
 .locations-info p {
+  font-size: 15px;
   margin: 0;
   display: flex;
   justify-content: space-between;
+}
+.location-name {
+  white-space: nowrap;
+  overflow: auto;
+  margin-left: 10px;
+}
+.location-dimension {
+  white-space: nowrap;
+  overflow: auto;
+  margin-left: 10px;
 }
 .overlay {
   position: fixed;
