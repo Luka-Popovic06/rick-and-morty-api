@@ -57,3 +57,21 @@ domElements.overlay.addEventListener('click', function (e) {
   domElements.searchEpisodes.value = '';
   domElements.searchLocations.value = '';
 });
+domElements.searchCharactersForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  getCharacter(character);
+  domElements.infoBox.classList.remove('hidden');
+  domElements.overlay.classList.remove('hidden');
+});
+domElements.searchEpizodesForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  getEpisode(episode);
+  domElements.infoBox.classList.remove('hidden');
+  domElements.overlay.classList.remove('hidden');
+});
+domElements.searchLocationsForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  getLocation(location);
+  domElements.infoBox.classList.remove('hidden');
+  domElements.overlay.classList.remove('hidden');
+});
