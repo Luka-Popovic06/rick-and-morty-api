@@ -52,3 +52,19 @@ export const getLocation = async locationName => {
     console.log(error);
   }
 };
+export const getEpisode = async episodeName => {
+  try {
+    const episodesData = await fetch(
+      `https://rickandmortyapi.com/api/episode/?name=${episodeName}`
+    );
+    const episodes = await episodesData.json();
+    const { results } = episodes;
+    console.log(results);
+    results.forEach(selectedEpisode => {
+      const { name, air_date, episode, id } = selectedEpisode;
+      createEpisodesInfo(name, air_date, episode, id);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
