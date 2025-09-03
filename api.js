@@ -37,3 +37,18 @@ export const getCharacter = async characterName => {
     console.log(error);
   }
 };
+export const getLocation = async locationName => {
+  try {
+    const locationData = await fetch(
+      `https://rickandmortyapi.com/api/location/?name=${locationName}`
+    );
+    const location = await locationData.json();
+    const { results } = location;
+    results.forEach(result => {
+      const { name, dimension, type, id } = result;
+      createLocationInfo(name, dimension, type, id);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
