@@ -98,3 +98,29 @@ const createCaracterInf = (img, name, species, type, id, status) => {
   `;
   domElements.infoBox.insertAdjacentHTML('afterbegin', html);
 };
+const createEpisodesInfo = (name, airDate, number, id) => {
+  const html = `
+  <div class="info-card_episodes ">
+      <div class="locations-info">
+        <p>
+          <span>Name: </span>
+          <span class="episode-name">${name}</span>
+        </p>
+        <p>
+          <span>Air date: </span>
+          <span class="episode-air_date">${airDate}</span>
+        </p>
+        <p>
+          <span>Episode: </span>
+          <span class="episode-number">${number}</span>
+        </p>
+        <p>
+          <span>ID: </span>
+          <span class="episode-id">${id}</span>
+        </p>
+      </div>
+    </div>
+    
+  `;
+  domElements.infoBox.insertAdjacentHTML('afterbegin', html);
+};
