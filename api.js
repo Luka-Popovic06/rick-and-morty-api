@@ -68,3 +68,33 @@ export const getEpisode = async episodeName => {
     console.log(error);
   }
 };
+const createCaracterInf = (img, name, species, type, id, status) => {
+  const html = `
+  <div class="info-card_character">
+      <img class="character-img" src=${img} />
+      <div class="characters-info">
+        <p>
+          <span>Name: </span>
+          <span class="character-name">${name}</span>
+        </p>
+        <p>
+          <span>Status: </span>
+          <span class="character-status">${status}</span>
+        </p>
+        <p>
+          <span>Species: </span>
+          <span class="character-species">${species}</span>
+        </p>
+        <p>
+          <span>Type: </span>
+          <span class="character-type">${type}</span>
+        </p>
+        <p>
+          <span>ID: </span>
+          <span class="character-id">${id}</span>
+        </p>
+      </div>
+    </div>
+  `;
+  domElements.infoBox.insertAdjacentHTML('afterbegin', html);
+};
