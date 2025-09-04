@@ -124,3 +124,26 @@ const createEpisodesInfo = (name, airDate, number, id) => {
   `;
   domElements.infoBox.insertAdjacentHTML('afterbegin', html);
 };
+const createLocationInfo = (name, dimension, type, id) => {
+  const html = `<div class="info-card_location">
+        <div class="locations-info">
+          <p>
+            <span>Name: </span>
+            <span class="location-name">${name}</span>
+          </p>
+          <p>
+            <span>Dimension: </span>
+            <span class="location-dimension">${dimension}</span>
+          </p>
+          <p>
+            <span>Type: </span>
+            <span class="location-type">${type}</span>
+          </p>
+          <p>
+            <span>ID: </span>
+            <span class="location-id">${id}</span>
+          </p>
+        </div>
+      </div>`;
+  domElements.infoBox.insertAdjacentHTML('afterbegin', html);
+};
